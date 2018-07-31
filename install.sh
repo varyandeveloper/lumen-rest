@@ -21,6 +21,9 @@ install_app () {
     # show app tests before running
     ./vendor/bin/phpunit
 
+    # set app key
+    php install.php
+
     # up docker container
     # docker-compose up -d
 }
